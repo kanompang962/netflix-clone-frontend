@@ -22,6 +22,13 @@ const Billboard = () => {
       });
   };
 
+  if (movieBillboard.length <= 0)
+    return (
+      <div className="flex justify-center items-center h-[56.25vw] text-xl font-bold text-white">
+        Loading...
+      </div>
+    );
+
   return (
     <div className="relative h-[56.25vw]">
       {/* Video */}
